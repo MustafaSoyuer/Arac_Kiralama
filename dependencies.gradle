@@ -5,6 +5,7 @@ ext {
             mapstruct                       : '1.5.5.Final',
             openApi                         : '2.3.0',
             postgresql                      : '42.7.1',
+            jwt                             : '4.4.0'
 
     ]
 
@@ -16,6 +17,7 @@ ext {
             mapstructProcessor                      : "org.mapstruct:mapstruct-processor:${versions.mapstruct}",
             openApi                                 : "org.springdoc:springdoc-openapi-starter-webmvc-ui:${versions.openApi}",
             postgreSQL                              : "org.postgresql:postgresql:${versions.postgresql}" ,
+            jwt                                     : "com.auth0:java-jwt:${versions.jwt}",
 
     ]
 

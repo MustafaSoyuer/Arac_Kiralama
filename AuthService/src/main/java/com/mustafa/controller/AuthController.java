@@ -1,5 +1,6 @@
 package com.mustafa.controller;
 
+import com.mustafa.dto.request.LoginRequestDto;
 import com.mustafa.dto.request.RegisterRequestDto;
 import com.mustafa.dto.response.RegisterResponseDto;
 import com.mustafa.service.AuthService;
@@ -11,8 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.mustafa.constant.RestApiUrls.AUTH;
-import static com.mustafa.constant.RestApiUrls.REGISTER;
+import static com.mustafa.constant.RestApiUrls.*;
 
 @RestController
 @RequiredArgsConstructor
@@ -24,5 +24,11 @@ public class AuthController {
     @PostMapping(REGISTER)
     public ResponseEntity<RegisterResponseDto> register (@RequestBody @Valid RegisterRequestDto dto){
         return ResponseEntity.ok(authService.register(dto));
+    }
+
+
+    @PostMapping(LOGIN)
+    public ResponseEntity<String> login(@RequestBody LoginRequestDto dto){
+        return ResponseEntity.ok(authService.login(dto));
     }
 }

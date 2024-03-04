@@ -11,6 +11,7 @@ public class RestApiUrls {
     public static final String AUTH = ROOT + "/auth";
 
     public static final String REGISTER = "/register";
+    public static final String LOGIN = "/login";
 
 
 
