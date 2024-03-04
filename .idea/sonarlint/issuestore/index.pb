@@ -5,18 +5,10 @@ S
 #src/main/java/com/mustafa/Main.java,6\6\66e239a771d06d9e4ed36b46a2e7fe4c8702011a
 H
 AuthService/build.gradle,4\2\422a76341f70bdfabc2f0cd4c4a256cae9ecef8a
-_
-/AuthService/src/main/java/com/mustafa/Main.java,0\3\037f80f64cd2e200f02ca8c7245f498efe4c54b0
 C
 dependencies.gradle,9\2\9282de42fdd92f96bfdaa8eed76823d133cf1624
 q
 AAuthService/src/main/java/com/mustafa/AuthServiceApplication.java,9\9\99adac9e12c10682a1a53272ade80022fac797c2
-J
-ConfigService/build.gradle,6\5\655e55f9754fdd0ddc30a4edae678c389d1b172a
-a
-1ConfigService/src/main/java/com/mustafa/Main.java,7\3\73bf7eec3f3d9b120c9a18af931e198a464df4a2
-u
-EConfigService/src/main/java/com/mustafa/ConfigServiceApplication.java,0\c\0c07efa7f204b9a71c8a04ce156337985c12b3b2
 f
 6AuthService/src/main/java/com/mustafa/entity/Auth.java,b\c\bcd6fa165231a7d17545d6c3c310c4219b25420a
 l
@@ -61,3 +53,5 @@ y
 IAuthService/src/main/java/com/mustafa/exception/AuthManagerException.java,6\8\68a199450d85dea66df8fac156b2fdc4d81218c2
 {
 KAuthService/src/main/java/com/mustafa/exception/GlobalExceptionHandler.java,2\b\2bb5199bc6038531c808692e8069576b1da9cb35
+
+OAuthService/src/main/java/com/mustafa/dto/request/ActivateStatusRequestDto.java,f\6\f64f5a96b26408e3ea217f88aed778e85fe3953a

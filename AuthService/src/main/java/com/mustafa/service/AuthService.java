@@ -1,5 +1,6 @@
 package com.mustafa.service;
 
+import com.mustafa.dto.request.ActivateStatusRequestDto;
 import com.mustafa.dto.request.LoginRequestDto;
 import com.mustafa.dto.request.RegisterRequestDto;
 import com.mustafa.dto.response.RegisterResponseDto;
@@ -44,9 +45,26 @@ public class AuthService extends ServiceManager<Auth,Long> {
         if(authOptional.isEmpty()){
             throw new AuthManagerException(ErrorType.LOGIN_ERROR);
         }
-        return jwtTokenManager.createToken(authOptional.get().getId())
-                .orElseThrow(() ->
-                        new AuthManagerException(ErrorType.TOKEN_NOT_CREATED));
+        if(authOptional.get().getStatus().equals(EStatus.ACTIVE)){
+            return jwtTokenManager.createToken(authOptional.get().getId(),authOptional.get().getRole())
+                    .orElseThrow(() -> new AuthManagerException(ErrorType.TOKEN_NOT_CREATED));
+        } else {
+            throw new AuthManagerException(ErrorType.ACCOUNT_NOT_ACTIVE);
+        }
+    }
+
+    public Boolean activateStatus(ActivateStatusRequestDto dto) {
+        Optional<Auth> optionalAuth = findById(dto.getAuthId());
+        if(optionalAuth.isEmpty()){
+            throw new AuthManagerException(ErrorType.USER_NOT_FOUND);
+        }
+        if(optionalAuth.get().getActivationCode().equals(dto.getActivationCode())){
+            optionalAuth.get().setStatus(EStatus.ACTIVE);
+            update(optionalAuth.get());
+            return true;
+        } else {
+            throw new AuthManagerException(ErrorType.ACTIVATION_CODE_ERROR);
+        }
     }
 }
 
