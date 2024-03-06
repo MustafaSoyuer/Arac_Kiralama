@@ -1,4 +1,5 @@
 rootProject.name = 'Arac_Kiralama'
 include 'AuthService'
 include 'ConfigService'
+include 'UserService'
 

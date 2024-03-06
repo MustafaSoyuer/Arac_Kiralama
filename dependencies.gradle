@@ -12,6 +12,7 @@ ext {
     libs = [
             springBootStarterWeb                    : "org.springframework.boot:spring-boot-starter-web:${versions.springBoot}",
             springBootStarterDataJpa                : "org.springframework.boot:spring-boot-starter-data-jpa:${versions.springBoot}",
+            springBootStarterDataMongoDB            : "org.springframework.boot:spring-boot-starter-data-mongodb:${versions.springBoot}",
             lombok                                  : "org.projectlombok:lombok:${versions.lombok}",
             mapstruct                               : "org.mapstruct:mapstruct:${versions.mapstruct}",
             mapstructProcessor                      : "org.mapstruct:mapstruct-processor:${versions.mapstruct}",

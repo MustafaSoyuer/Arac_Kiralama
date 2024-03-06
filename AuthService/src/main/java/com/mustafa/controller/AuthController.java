@@ -38,4 +38,5 @@ public class AuthController {
     public ResponseEntity<Boolean> activateStatus(@RequestBody ActivateStatusRequestDto dto){
         return ResponseEntity.ok(authService.activateStatus(dto));
     }
+
 }
