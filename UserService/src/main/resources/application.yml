@@ -1,12 +1,8 @@
-server:
-  port: 6061
-
 spring:
-  data:
-    mongodb:
-      host: localhost
-      port: 27018
-      database: UserProfile
-      username: bilgeUser
-      password: bilgeUser*
-#    docker run --name AracKiralamaMongoDB -d -e"MONGO_INITDB_ROOT_USERNAME=admin" -e"MONGO_INITDB_ROOT_PASSWORD=root" -p 27018:27017 mongo:jammy
+  cloud:
+    config:
+      uri: http://localhost:8888
+  config:
+    import: "configserver:"
+  application:
+    name: application-user

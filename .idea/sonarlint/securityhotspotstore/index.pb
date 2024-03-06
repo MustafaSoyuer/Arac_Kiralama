@@ -57,8 +57,6 @@ KAuthService/src/main/java/com/mustafa/exception/GlobalExceptionHandler.java,2\
 OAuthService/src/main/java/com/mustafa/dto/request/ActivateStatusRequestDto.java,f\6\f64f5a96b26408e3ea217f88aed778e85fe3953a
 H
 UserService/build.gradle,a\5\a5aa623a677c1c39a9153575b6482c5bdbf6ddfc
-_
-/UserService/src/main/java/com/mustafa/Main.java,2\3\230833fd4e2fffe49df7b3f76afc5fa4c53de1bd
 q
 AUserService/src/main/java/com/mustafa/UserServiceApplication.java,5\0\5001d4e7081104f49eb7d7d2e2b7c1b0e38a7d40
 p
@@ -67,8 +65,6 @@ f
 6UserService/src/main/java/com/mustafa/domain/User.java,8\2\824ef7336bd18d638dd17c27e2d8b3670ee77950
 l
 <UserService/src/main/java/com/mustafa/domain/BaseEntity.java,1\9\1937f88c5c3c4b664ed30df89ed1488502484afc
-{
-KUserService/src/main/java/com/mustafa/controller/UserProfileController.java,c\3\c3eeeba1fe3bfd357b35ab1b7718585d89d1d707
 t
 DUserService/src/main/java/com/mustafa/controller/UserController.java,2\3\230fff1d4600f8ff728a5cf4c4970c7a3712fc24
 n
@@ -85,8 +81,6 @@ r
 BUserService/src/main/java/com/mustafa/utility/JwtTokenManager.java,3\8\38d575f16381d0ed0c26ea9e18040c47377364c8
 x
 HUserService/src/main/java/com/mustafa/dto/request/AddUserRequestDto.java,f\8\f8e25a40a1cf65480be214f7d59d07f9f3076c17
-s
-CUserService/src/main/java/com/mustafa/mapper/UserProfileMapper.java,7\7\7766ea21a3cf2f8db257345acd1ece6da157c70b
 l
 <UserService/src/main/java/com/mustafa/mapper/UserMapper.java,2\0\209371a421aa7d24b29d6e62d8a3279bd11a03d7
 q
@@ -103,3 +97,15 @@ n
 >UserService/src/main/java/com/mustafa/exception/ErrorType.java,a\4\a480ec7ddf7a0650e7dba0fb90d8ee5e752db146
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
+9
+	readme.md,2\7\275d783e298228506068436512433d343feb52aa
+L
+ConfigServerGit/build.gradle,0\6\06794e4c2b85afa762623c1b8c8519b4ee996cc0
+c
+3ConfigServerGit/src/main/java/com/mustafa/Main.java,f\e\fef1c7e7eb6060f71cf82e5fd48fa1b84e444678
+I
+ConfigServer/build.gradle,f\a\fa11b4e11818f8908a8d4af4bec40b2e95070692
+`
+0ConfigServer/src/main/java/com/mustafa/Main.java,8\b\8b76fc9a13593864545974aa5125c80ba176d81b
+s
+CConfigServer/src/main/java/com/mustafa/ConfigServerApplication.java,c\e\ce48492135b02cf49bf4c26bc0410938de9de312

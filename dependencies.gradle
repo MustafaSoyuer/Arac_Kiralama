@@ -5,7 +5,9 @@ ext {
             mapstruct                       : '1.5.5.Final',
             openApi                         : '2.3.0',
             postgresql                      : '42.7.1',
-            jwt                             : '4.4.0'
+            jwt                             : '4.4.0',
+            springCloud                     : '4.1.0',
+
 
     ]
 
@@ -13,6 +15,9 @@ ext {
             springBootStarterWeb                    : "org.springframework.boot:spring-boot-starter-web:${versions.springBoot}",
             springBootStarterDataJpa                : "org.springframework.boot:spring-boot-starter-data-jpa:${versions.springBoot}",
             springBootStarterDataMongoDB            : "org.springframework.boot:spring-boot-starter-data-mongodb:${versions.springBoot}",
+            springCloudConfig                       : "org.springframework.cloud:spring-cloud-starter-config:${versions.springCloud}",
+            springCloudConfigServer                 : "org.springframework.cloud:spring-cloud-config-server:${versions.springCloud}",
+            springCloudConfigClient                 : "org.springframework.cloud:spring-cloud-config-client:${versions.springCloud}",
             lombok                                  : "org.projectlombok:lombok:${versions.lombok}",
             mapstruct                               : "org.mapstruct:mapstruct:${versions.mapstruct}",
             mapstructProcessor                      : "org.mapstruct:mapstruct-processor:${versions.mapstruct}",
