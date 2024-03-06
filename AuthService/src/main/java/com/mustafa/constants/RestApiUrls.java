@@ -1,4 +1,4 @@
-package com.mustafa.constant;
+package com.mustafa.constants;
 
 public class RestApiUrls {
     private static final String VERSION = "/v1";
@@ -13,6 +13,7 @@ public class RestApiUrls {
     public static final String REGISTER = "/register";
     public static final String LOGIN = "/login";
     public static final String ACTIVATE_STATUS = "/activate-status";
+    public static final String ADD = "/add";
 
 
 

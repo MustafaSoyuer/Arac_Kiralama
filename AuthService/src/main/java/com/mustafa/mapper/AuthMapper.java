@@ -1,6 +1,7 @@
 package com.mustafa.mapper;
 
 
+import com.mustafa.dto.request.AddUserRequestDto;
 import com.mustafa.dto.request.RegisterRequestDto;
 import com.mustafa.dto.response.RegisterResponseDto;
 import com.mustafa.entity.Auth;
@@ -16,6 +17,9 @@ public interface AuthMapper {
 
     Auth fromRegisterRequestToAuth(final RegisterRequestDto dto);
     RegisterResponseDto fromAuthToRegisterResponseDto(final Auth auth);
+
+    @Mapping(source = "id" , target = "authId")
+    AddUserRequestDto fromAuthToCreateUserRequestDto(final Auth auth);
 
 
 }

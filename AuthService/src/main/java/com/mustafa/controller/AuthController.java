@@ -13,8 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.mustafa.constant.RestApiUrls.*;
-import static com.mustafa.constant.RestApiUrls.ACTIVATE_STATUS;
+import static com.mustafa.constants.RestApiUrls.*;
 
 @RestController
 @RequiredArgsConstructor

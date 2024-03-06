@@ -109,3 +109,9 @@ I
 0ConfigServer/src/main/java/com/mustafa/Main.java,8\b\8b76fc9a13593864545974aa5125c80ba176d81b
 s
 CConfigServer/src/main/java/com/mustafa/ConfigServerApplication.java,c\e\ce48492135b02cf49bf4c26bc0410938de9de312
+u
+EAuthService/src/main/java/com/mustafa/manager/UserProfileManager.java,f\b\fbc01c76dcf5ad4fd75ef16a23054dbde9a6a6be
+x
+HAuthService/src/main/java/com/mustafa/dto/request/AddUserRequestDto.java,c\4\c427a29f9544cd6a26ce7ed80afd26366b53aa87
+p
+@AuthService/src/main/java/com/mustafa/constants/RestApiUrls.java,5\d\5d06af134a14f2edd00553c70ad8433776a5a0ab

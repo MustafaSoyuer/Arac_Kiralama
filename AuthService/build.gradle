@@ -8,5 +8,7 @@ dependencies {
     implementation libs.springBootStarterDataJpa
     implementation libs.postgreSQL
     implementation libs.springCloudConfigClient
+    implementation libs.springCloudOpenFeign
+
 
 }

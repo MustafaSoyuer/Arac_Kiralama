@@ -7,6 +7,7 @@ import com.mustafa.dto.response.RegisterResponseDto;
 import com.mustafa.entity.Auth;
 import com.mustafa.exception.AuthManagerException;
 import com.mustafa.exception.ErrorType;
+import com.mustafa.manager.UserProfileManager;
 import com.mustafa.mapper.AuthMapper;
 import com.mustafa.repository.AuthRepository;
 import com.mustafa.utility.CodeGenerator;
@@ -23,13 +24,16 @@ public class AuthService extends ServiceManager<Auth,Long> {
 
     private final AuthRepository authRepository;
     private final JwtTokenManager jwtTokenManager;
+    private final UserProfileManager userProfileManager;
 
 
 
-    public AuthService(JpaRepository<Auth, Long> repository, AuthRepository authRepository, JwtTokenManager jwtTokenManager) {
+
+    public AuthService(JpaRepository<Auth, Long> repository, AuthRepository authRepository, JwtTokenManager jwtTokenManager, UserProfileManager manager, UserProfileManager userProfileManager) {
         super(repository);
         this.authRepository = authRepository;
         this.jwtTokenManager = jwtTokenManager;
+        this.userProfileManager = userProfileManager;
     }
 
 
@@ -37,6 +41,8 @@ public class AuthService extends ServiceManager<Auth,Long> {
         Auth auth = AuthMapper.INSTANCE.fromRegisterRequestToAuth(dto);
         auth.setActivationCode(CodeGenerator.generateCode());
         save(auth);
+        userProfileManager.save(AuthMapper.INSTANCE.fromAuthToCreateUserRequestDto(auth));
+
         return AuthMapper.INSTANCE.fromAuthToRegisterResponseDto(auth);
     }
 
@@ -61,6 +67,7 @@ public class AuthService extends ServiceManager<Auth,Long> {
         if(optionalAuth.get().getActivationCode().equals(dto.getActivationCode())){
             optionalAuth.get().setStatus(EStatus.ACTIVE);
             update(optionalAuth.get());
+            userProfileManager.activateStatus(dto.getAuthId());
             return true;
         } else {
             throw new AuthManagerException(ErrorType.ACTIVATION_CODE_ERROR);
