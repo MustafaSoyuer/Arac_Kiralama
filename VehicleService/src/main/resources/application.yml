@@ -1,0 +1,14 @@
+server:
+  port: 6062
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27018
+      database: UserProfile
+      username: bilgeUser
+      password: bilgeUser*
+  jpa:
+    hibernate:
+      ddl-auto: update

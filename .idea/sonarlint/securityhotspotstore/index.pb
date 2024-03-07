@@ -13,8 +13,6 @@ f
 6AuthService/src/main/java/com/mustafa/entity/Auth.java,b\c\bcd6fa165231a7d17545d6c3c310c4219b25420a
 l
 <AuthService/src/main/java/com/mustafa/entity/BaseEntity.java,2\1\218c303bfd8ed935547bad6754ce5cd128b84693
-o
-?AuthService/src/main/java/com/mustafa/constant/RestApiUrls.java,c\c\cc2de23ad143bd793c1cf62044cd94435975ec85
 n
 >AuthService/src/main/java/com/mustafa/utility/enums/ERole.java,8\6\860e0567e9c778cf035f3cdebded3cfc8247f39a
 p
@@ -105,8 +103,6 @@ c
 3ConfigServerGit/src/main/java/com/mustafa/Main.java,f\e\fef1c7e7eb6060f71cf82e5fd48fa1b84e444678
 I
 ConfigServer/build.gradle,f\a\fa11b4e11818f8908a8d4af4bec40b2e95070692
-`
-0ConfigServer/src/main/java/com/mustafa/Main.java,8\b\8b76fc9a13593864545974aa5125c80ba176d81b
 s
 CConfigServer/src/main/java/com/mustafa/ConfigServerApplication.java,c\e\ce48492135b02cf49bf4c26bc0410938de9de312
 u
@@ -115,3 +111,9 @@ x
 HAuthService/src/main/java/com/mustafa/dto/request/AddUserRequestDto.java,c\4\c427a29f9544cd6a26ce7ed80afd26366b53aa87
 p
 @AuthService/src/main/java/com/mustafa/constants/RestApiUrls.java,5\d\5d06af134a14f2edd00553c70ad8433776a5a0ab
+K
+VehicleService/build.gradle,7\b\7b16b6768949529edcdc17abc6507534328b5f6a
+b
+2VehicleService/src/main/java/com/mustafa/Main.java,9\1\91edc518e2c13ed4457feb318be9a6e8b314c4d9
+w
+GVehicleService/src/main/java/com/mustafa/VehicleServiceApplication.java,e\f\efef2e2024b24370d047bf819abe92a57bc26a65

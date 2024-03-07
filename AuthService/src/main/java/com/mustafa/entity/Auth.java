@@ -19,16 +19,23 @@ public class Auth extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    private String name;
+    private String surname;
+    private String tcNo;
     @Column(unique = true)
     private String username;
     @Email
     private String email;
     private String password;
+    private String phonoNumber;
+    private String address;
+
     private String activationCode;
+
     @Enumerated(EnumType.STRING)
     @Builder.Default
     private ERole role = ERole.USER;
+
     @Enumerated(EnumType.STRING)
     @Builder.Default
     private EStatus status = EStatus.PENDING;
